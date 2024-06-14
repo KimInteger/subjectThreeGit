@@ -13,6 +13,12 @@
 <script>
   const h2 = document.getElementsByTagName('h2');
 
-  console.log(h2);
+  h2[0].addEventListener('click',()=>{
+    if(h2[0].style.color === 'black'){
+      h2[0].style.color = 'bisque';
+    } else {
+      h2[0].style.color = 'black';
+    }
+  });
 </script>
 </html>
